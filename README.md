@@ -30,7 +30,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Greeting Rails <a name="about-project"></a>
-
+ 
 > Fully functional greeting rails that allows a user to add categories and transactions to their list.
 
 ## 🛠 Built With <a name="built-with"></a>
