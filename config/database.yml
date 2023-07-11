@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # url: postgres://caleb:cKplQYmoTwnH78Qrj4mWMjUwdLM8keo0@dpg-cii5ir2ip7vpelq7e4vg-a.oregon-postgres.render.com/budget_app_dev
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5432
+  username: caleb
+  password: 1234
+
+development:
+  <<: *default
+  database: React_Rails_development
+
+test:
+  <<: *default
+  database: React_Rails_test
+
+production:
+  <<: *default
+  database: React_Rails
+
